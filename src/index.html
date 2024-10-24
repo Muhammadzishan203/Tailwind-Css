@@ -1,13 +1,27 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <!-- Meta tags for character set and responsiveness -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS Breakpoints Example</title>
+
+  <!-- Linking the generated Tailwind CSS file -->
   <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-4xl font-bold underline text-red-900">
-    Hello world!
-  </h1>
+  <!-- 
+    Responsive div with different padding sizes based on Tailwind's custom breakpoints:
+    - Default (p-2) applies to all screens below the smallest breakpoint (xs).
+    - 'xs' breakpoint starts at 512px, with padding of 4 (p-4).
+    - 'sm' starts at 640px, padding increases to 6 (p-6).
+    - 'md' starts at 768px, padding increases to 8 (p-8).
+    - 'lg' starts at 1024px, padding increases to 10 (p-10).
+    - 'xl' starts at 1280px, padding increases to 12 (p-12).
+    - '2xl' starts at 1536px, padding increases to 16 (p-16).
+  -->
+  <div class="bg-black text-white p-2 xs:p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12 2xl:p-16">
+    Responsive padding
+  </div>
 </body>
 </html>
